@@ -1,0 +1,42 @@
+baseURL = 'https://opengwas.github.io/'
+languageCode = 'en-us'
+title = 'OpenGWAS Blog'
+theme = "tailwind"
+author = "MRC IEU"
+copyright = "University of Bristol"
+paginate = 3
+
+[params]
+  keywords = "GWAS"
+  subtitle = "Latest news from the OpenGWAS team"
+  toc = true
+
+  # dir name of your blog content (default is `content/posts`).
+  # the list of set content will show up on your index page (baseurl).
+  contentTypeName = "posts"
+
+  [params.header]
+    logo = "text-white.png"
+
+  [params.footer]
+    since = 2018
+    poweredby = false
+
+[menu]
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    pageRef = "/posts"
+    weight = 0
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    pageRef = "/about"
+    weight = 10
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
