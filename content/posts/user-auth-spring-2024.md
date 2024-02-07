@@ -18,29 +18,29 @@ After all the changes, the workflow will be like this:
 
 1. User signs in to our website, generates a random string ('token') and saves it to the R or Python packages or their own script.
 2. The package or script sends the request to OpenGWAS API, carrying the token.
-3. OpenGWAS identifies users by the token, calculates the cost of the request, deducts it from the user's allowance and finally fulfills the request.
-4. User can make as many requests as possible, as long as they still have allowance. Requests will be denied if there is no allowance left. Allowance will be replenished every hour and does not carry over.
-5. Token is valid for 14 days and user can request a new one at any time.
+3. OpenGWAS identifies users by the token, calculates the cost of the request, deducts it from the user's allowance and finally fulfills the request if there is still allowance left.
+
+Token is valid for a while and user can request a new one at any time. Allowance will be replenished every hour and does not carry over.
 
 ## Sign in
 
-You can sign in using Microsoft SSO, GitHub and email verification. You will need to provide your email address and first and last name if you are using email verification, or we will fetch those directly from Microsoft or GitHub. You personal data will be protected by UK GDPR.
+You can [sign in](https://api.opengwas.io/) via Microsoft SSO, GitHub and email verification. You will need to provide your email address and first and last name if you are using email verification, or we will fetch those directly from Microsoft or GitHub. You personal data will be protected by UK GDPR.
 
 There is no specific 'sign up' process. The first time you sign in successfully using any of the methods above, your information is recorded. And there is no 'password' to memorise.
 
-OpenGWAS will infer your affiliation during sign in. This is from either the organisational profile of your Microsoft account, or the domain of your email address (e.g. bristol.ac.uk). If OpenGWAS believes that you are a member of an organisation (whether or not it is an academic institution), you will be categorised as an 'Organisational' user and will receive 5x allowance compared with a 'Personal' user. If you sign in using an organisational account via Microsoft, we will also receive your department and job title information.
+OpenGWAS will infer your affiliation during sign in. This is from either the organisational profile of your Microsoft account, or the domain of your email address (e.g. bristol.ac.uk). If OpenGWAS believes that you are a member of an organisation (whether or not it is an academic institution), you will be categorised as an **Organisational** user and will receive 5x allowance compared with a **Personal** user. If you sign in using an organisational account via Microsoft, we will also receive your department and job title information (if any).
 
 ## Your token
 
-Once you have successfully signed in, you can request a token, which is valid for 14 days. This is your proof of identity and you should never share it with others.
+Once you have successfully signed in, you can request a token, which will be valid for a while. This is your proof of identity and you should never share it with others.
 
-You can only have one token at a time. You can reset your token at anytime, but doing this will not affect your allowance (e.g. if you ran out of allowance, you cannot bypass the restriction by resetting your token).
+You can only have one valid token at a time but you can reset it at anytime.
 
-You can use the same token on unlimited number of your devices, package installations, scripts etc. To use your token, add it into your **request header** under the key `Authorization` with value `Bearer: your_token`.
+You can use the same token on unlimited number of your devices, package installations, scripts etc. To use your token, add it into your **request header** under the key `Authorization` with value `Bearer: your_token`. Read more about how to do this in the [Authentication](https://api.opengwas.io/api/#authentication) section of API tutorial.
 
 Packages developed by MRC IEU will be updated shortly to reflect this change.
 
-## The allowance and costs
+## Your allowance and the costs
 
 You will be given allowance per hour based on you user tier, free of charge. Every time you send a request, OpenGWAS will work out the cost of it using a set of rules and deduct the cost from your allowance.
 
