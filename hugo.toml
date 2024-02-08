@@ -1,4 +1,4 @@
-baseURL = 'https://opengwas.github.io/'
+baseURL = 'https://blog.opengwas.io/'
 languageCode = 'en-us'
 title = 'OpenGWAS Blog'
 theme = "tailwind"

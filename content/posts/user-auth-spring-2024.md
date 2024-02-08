@@ -24,7 +24,7 @@ Token is valid for a while and user can request a new one at any time. Allowance
 
 ## Sign in
 
-You can [sign in](https://api.opengwas.io/) via Microsoft SSO, GitHub and email verification. You will need to provide your email address and first and last name if you are using email verification, or we will fetch those directly from Microsoft or GitHub. You personal data will be protected by UK GDPR.
+You can [sign in](https://api.opengwas.io/) via Microsoft SSO, GitHub or email verification. You will need to provide your email address and first and last name if you are using email verification, or we will fetch those directly from Microsoft or GitHub. You personal data will be protected by UK GDPR.
 
 There is no specific 'sign up' process. The first time you sign in successfully using any of the methods above, your information is recorded. And there is no 'password' to memorise.
 
