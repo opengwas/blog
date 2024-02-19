@@ -42,7 +42,7 @@ Packages developed by MRC IEU will be updated shortly to reflect this change.
 
 ## Your allowance and the costs
 
-You will be given allowance per hour based on the method of your most recent sign-in, free of charge. Every time you send a request, OpenGWAS will work out the cost of it using a set of rules and deduct the cost from your allowance.
+You will be given allowance per hour based on the method of your most recent sign-in, free of charge. Every time you send a request, OpenGWAS will work out the cost using a set of rules and deduct the cost from your allowance.
 
 The allowance for your account: 
 - is replenished every hour, and you can make as many requests as possible within the hour until you exhaust your allowance
@@ -53,4 +53,4 @@ The cost of each request:
 - is nil or flat for a few endpoints, and varies for the others based on the procedure and the amount of resources requested
 - is calculated when OpenGWAS accepts it (identical requests will be charged separately)
 
-Read [Allowance and cost](http://localhost:8019/api/#allowance) in the API tutorial for more information.
+Read [Allowance and cost](http://api.opengwas.io/api/#allowance) in the API tutorial for more information.
