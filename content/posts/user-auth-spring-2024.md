@@ -36,13 +36,13 @@ Once you have successfully signed in, you can request a token, which will be val
 
 You can only have one valid token at a time but you can reset it at anytime.
 
-You can use the same token on unlimited number of your devices, package installations, scripts etc. To use your token, add it into your **request header** under the key `Authorization` with value `Bearer: your_token`. Read more about how to do this in the [Authentication](https://api.opengwas.io/api/#authentication) section of API tutorial.
+You can use the same token on unlimited number of your devices, package installations, scripts etc. To use your token, add it into your **request header** under the key `Authorization` with value `Bearer your_token`. Read more about how to do this in the [Authentication](https://api.opengwas.io/api/#authentication) section of API tutorial.
 
 Packages developed by MRC IEU will be updated shortly to reflect this change.
 
 ## Your allowance and the costs
 
-You will be given allowance per hour based on you user tier, free of charge. Every time you send a request, OpenGWAS will work out the cost of it using a set of rules and deduct the cost from your allowance.
+You will be given allowance per hour based on the method of your most recent sign-in, free of charge. Every time you send a request, OpenGWAS will work out the cost of it using a set of rules and deduct the cost from your allowance.
 
 The allowance for your account: 
 - is replenished every hour, and you can make as many requests as possible within the hour until you exhaust your allowance
