@@ -2,7 +2,7 @@
 author = "OpenGWAS"
 title = "User authentication is now live"
 date = "2024-01-19"
-description = "Users will need to sign in and generate a token to be provided along with their request. Users will be given free allowance, and the cost of each request will be deducted from your allowance. This article explains the process in detail."
+description = "After the transition period, users will need to sign in and generate a token to be provided along with their request. Users will be given free allowance, and the cost of each request will be deducted from your allowance. This article explains the process in detail."
 tags = [
     "auth",
 ]
@@ -54,3 +54,9 @@ The cost of each request:
 - is calculated when OpenGWAS accepts it (identical requests will be charged separately; you will still be charged if the result is empty)
 
 Read [Allowance and cost](http://api.opengwas.io/api/#allowance) in the API tutorial for more information.
+
+## What's next: The transition period
+
+You will have until 30th April 2024 to update the packages (developed by MRC IEU) and implement the auth flow in your own script. From Wednesday 1st May 2024, you need to prove your identity (authenticate) to use our service, even if you are querying a public dataset.
+
+Read [Authentication](https://api.opengwas.io/api/#authentication) in the API tutorial for more information.
