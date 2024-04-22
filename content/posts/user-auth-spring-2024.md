@@ -41,7 +41,7 @@ Once you have successfully signed in, you can request a token, which will be val
 
 You can only have one valid token at a time but you can reset it at anytime.
 
-You can use the same token on unlimited number of your devices, package installations, scripts etc. To use your token, add it into your **request header** under the key `Authorization` with value `Bearer your_token`. Read more about how to do this in the [Authentication](https://api.opengwas.io/api/#authentication) section of API tutorial. You can also read about how to use the token in R packages e.g. [https://mrcieu.github.io/ieugwasr/articles/guide.html].
+You can use the same token on unlimited number of your devices, package installations, scripts etc. To use your token, add it into your **request header** under the key `Authorization` with value `Bearer your_token`. Read more about how to do this in the [Authentication](https://api.opengwas.io/api/#authentication) section of API tutorial. You can also read about how to use the token in R packages e.g. [ieugwasr](https://mrcieu.github.io/ieugwasr/articles/guide.html).
 
 ## How do tokens work?
 
@@ -73,6 +73,6 @@ Previously, a small number of users depended on using Google OAuth2 authenticati
 
 ## What's next: The transition period
 
-You will have until 30th April 2024 to update the packages (developed by MRC IEU) and implement the auth flow in your own script. From Wednesday 1st May 2024, you need to prove your identity (authenticate) to use our service, even if you are querying a public dataset. See [https://mrcieu.github.io/ieugwasr/articles/guide.html] for more information on how to use the token in R packages.
+You will have until 30th April 2024 to update the packages (developed by MRC IEU) and implement the auth flow in your own script. From Wednesday 1st May 2024, you need to prove your identity (authenticate) to use our service, even if you are querying a public dataset. See e.g. [ieugwasr tutorial](https://mrcieu.github.io/ieugwasr/articles/guide.html) for more information on how to use the token in R packages.
 
 Read [Authentication](https://api.opengwas.io/api/#authentication) in the API tutorial for more information.
